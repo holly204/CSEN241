@@ -1,1 +1,18 @@
+#manurally run the qemu for each time
+sudo qemu-system-x86_64 -m 4096 -hda ubuntu.img -hdb raw.img -enable-kvm -smp 1 -net nic -net user,hostfwd=tcp::10022-:22
 
+sudo qemu-system-x86_64 -m 4096 -hda ubuntu.img -hdb raw.img -enable-kvm -smp 4 -net nic -net user,hostfwd=tcp::10022-:22
+
+sudo qemu-system-x86_64 -m 16384 -hda ubuntu.img -hdb raw.img -enable-kvm -smp 1 -net nic -net user,hostfwd=tcp::10022-:22
+
+sudo qemu-system-x86_64 -m 16384 -hda ubuntu.img -hdb raw.img -enable-kvm -smp 4 -net nic -net user,hostfwd=tcp::10022-:22
+
+
+
+sudo qemu-system-x86_64 -m 4096 -hda ubuntu.img -hdb qcow2.img -enable-kvm -smp 1 -net nic -net user,hostfwd=tcp::10022-:22
+
+sudo qemu-system-x86_64 -m 4096 -hda ubuntu.img -hdb qcow2.img -enable-kvm -smp 4 -net nic -net user,hostfwd=tcp::10022-:22
+
+sudo qemu-system-x86_64 -m 16384 -hda ubuntu.img -hdb qcow2.img -enable-kvm -smp 1 -net nic -net user,hostfwd=tcp::10022-:22
+
+sudo qemu-system-x86_64 -m 16384 -hda ubuntu.img -hdb qcow2.img -enable-kvm -smp 4 -net nic -net user,hostfwd=tcp::10022-:22
