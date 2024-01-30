@@ -1,3 +1,4 @@
+#manurally run one each time
 $ docker run --cpus=1 --memory=4096M -it a3d53c9bd81f /bin/bash
 $ docker run --cpus=4 --memory=4096M -it a3d53c9bd81f /bin/bash
 $ docker run --cpus=1 --memory=16384M -it a3d53c9bd81f /bin/bash
